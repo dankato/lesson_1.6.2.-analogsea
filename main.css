@@ -1,35 +1,134 @@
 body {
+    background: #298eea;
+    font-family: helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    padding-top: 60px;
+}
+
+
+body * {
 	box-sizing: border-box;
-	background-color: 
-}
-img {
-	height: 35px;
-	display: block;
-	margin: 0 auto;
 }
 
-h1 {
-	font-family: helvetica;
+legend {
 	font-size: 26px;
-
 }
+
+.logo {
+	height: 35px;
+	width: auto;			/*need to remember to add this*/
+	display: block;
+	margin: 0 auto 30px;
+	text-align: center;			/*need to remember to add all sides*/
+}
+
 
 .signup {
-	width: 400px;
-	padding-left: 40px;
-	padding-right: 40px;
-	display: block;
-	margin: 0 auto;
+    margin: 0 auto;
+    width: 400px;
+    padding: 40px;
+    border-radius: 3px;		/*play*/
+    background: white;		/*need to add next time*/
 }
 
-input, button {
-	width: 320px;
-	border: 2px solid gray;
+.signup legend {					/*need to add this too*/
+	text-align: center;
+	font-weight: 300;
+	font-size: 35px;
+	line-height: 38px;				/*need to play around with this to rememeber*/
+	color: black;
+	margin: 0 auto 45px;
+	letter-spacing: 0;			/*dafuq*/
+}
+
+
+input[type='text'] {
+	background: whitesmoke;	
+	width: 100%;						/*play here*/
+	border: 2px solid lightgray;
+	border-radius: 3px;
 	padding: 15px;
 	display: block;
+	background-color: WhiteSmoke;
+	font-size: 18px;
+	height: auto;						/*play here*/
+	text-align: left;
+	margin: 20px auto;
+	    transition: opacity 0.4s;  		/*dafuq*/
 }
 
-button {
-	color: green;
-	border-color: darkgreen;
+input[class="email"]:focus,					/*what is focus?  */
+input[class="password"]:focus,
+button[class="signupbutton"]:focus {
+border-color: blue;
+box-shadow: none;
 }
+
+
+
+.signup p {
+	text-align: center;
+	font-size: 14px;
+	margin: 0;
+	margin-top: 10px;
+	color: pink;
+}
+
+.signup a {
+	text-decoration: none;
+	color: pink;
+	border-bottom: 1px solid red;  /*?????*/
+}
+
+.signup a:hover {
+	border-color: pink;
+	color:blue;
+}
+
+
+button[id="signup"] {
+    color: white;
+    background: #15CD72;
+    border: 0;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 0;
+    height: auto;
+}
+
+button:hover[id="signup"] {
+    background-color: #0CB863;
+
+    -webkit-transition: background 0.1s;			/*dafuq is all this*/
+    -moz-transition: background 0.1s;
+    -o-transition: background 0.1s;
+    transition: background 0.1s;
+}
+
+
+.footer {
+	text-align: center;
+	color: gray;
+	margin: 20px auto;
+	border: 0;
+	padding: 0;
+}
+
+.footer a {
+	color:pink;
+}
+
+.footer a:hover {
+	color:pink;
+}
+
+.footer p {
+	margin-bottom: 40px;
+}
+
+
+
+
